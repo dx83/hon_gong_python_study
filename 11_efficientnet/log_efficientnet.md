@@ -22,12 +22,13 @@ Epoch 3/3
 187/187 ━━━━━━━━━━━━━━━━━━━━ 595s 3s/step - accuracy: 0.1151 - loss: 3.7199 - val_accuracy: 0.0688 - val_loss: 4.1991  
 
 Epoch 1/5  
-187/187 ━━━━━━━━━━━━━━━━━━━━ 767s 4s/step - accuracy: 0.1302 - loss: 3.6227 - val_accuracy: 0.0786 - val_loss: 4.2242  
+187/187 ━━━━━━━━━━━━━━━━━━━━ 537s 3s/step - accuracy: 0.1332 - loss: 3.6278 - val_accuracy: 0.0929 - val_loss: 3.9401  
 Epoch 2/5  
-187/187 ━━━━━━━━━━━━━━━━━━━━ 800s 4s/step - accuracy: 0.1424 - loss: 3.5399 - val_accuracy: 0.0835 - val_loss: 4.0561  
+187/187 ━━━━━━━━━━━━━━━━━━━━ 526s 3s/step - accuracy: 0.1404 - loss: 3.5480 - val_accuracy: 0.1132 - val_loss: 3.7546  
 Epoch 3/5  
-187/187 ━━━━━━━━━━━━━━━━━━━━ 892s 5s/step - accuracy: 0.1573 - loss: 3.4492 - val_accuracy: 0.1056 - val_loss: 3.9157  
+187/187 ━━━━━━━━━━━━━━━━━━━━ 537s 3s/step - accuracy: 0.1542 - loss: 3.4642 - val_accuracy: 0.1028 - val_loss: 3.9569  
 Epoch 4/5  
-187/187 ━━━━━━━━━━━━━━━━━━━━ 923s 5s/step - accuracy: 0.1714 - loss: 3.3628 - val_accuracy: 0.1384 - val_loss: 3.6348  
+187/187 ━━━━━━━━━━━━━━━━━━━━ 495s 3s/step - accuracy: 0.1710 - loss: 3.3738 - val_accuracy: 0.1298 - val_loss: 3.6761  
 Epoch 5/5  
-187/187 ━━━━━━━━━━━━━━━━━━━━ 741s 4s/step - accuracy: 0.1873 - loss: 3.2740 - val_accuracy: 0.1449 - val_loss: 3.6332  
+187/187 ━━━━━━━━━━━━━━━━━━━━ 496s 3s/step - accuracy: 0.1887 - loss: 3.2889 - val_accuracy: 0.1243 - val_loss: 3.8054  
+

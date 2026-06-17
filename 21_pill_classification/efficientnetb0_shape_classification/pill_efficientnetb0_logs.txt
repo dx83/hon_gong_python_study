@@ -1,0 +1,216 @@
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Workspace\deeplearning>python efficientnetb0_pill_classification.py
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1781579280.593107   35472 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1781579283.233312   35472 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+CSV Loading...
+C:\Workspace\deeplearning\efficientnetb0_pill_classification.py:44: DtypeWarning: Columns (13,14,17) have mixed types. Specify dtype option on import or set low_memory=False.
+  df_info = pd.read_csv(
+품목 수 : 27387
+Scanning Images...
+이미지 수 : 53512
+사용 이미지 : 53512
+클래스 수 : 11
+Creating Group Split...
+
+Train : 42810
+Valid : 10702
+Group Overlap : 0
+I0000 00:00:1781579291.470201   35472 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Building Model...
+WARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+
+Stage 1 Training
+Epoch 1/15
+I0000 00:00:1781579308.713081   33568 shuffle_dataset_op.cc:453] ShuffleDatasetV3:3: Filling up shuffle buffer (this may take a while): 5599 of 10000
+I0000 00:00:1781579318.734207   33568 shuffle_dataset_op.cc:453] ShuffleDatasetV3:3: Filling up shuffle buffer (this may take a while): 9268 of 10000
+I0000 00:00:1781579320.619028   33568 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 0s 421ms/step - accuracy: 0.8389 - loss: 0.5075
+Epoch 1: val_accuracy improved from None to 0.90637, saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+
+Epoch 1: finished saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 736s 529ms/step - accuracy: 0.8809 - loss: 0.3712 - val_accuracy: 0.9064 - val_loss: 0.2965 - learning_rate: 0.0010
+Epoch 2/15
+I0000 00:00:1781580039.217784   15124 shuffle_dataset_op.cc:453] ShuffleDatasetV3:3: Filling up shuffle buffer (this may take a while): 6095 of 10000
+I0000 00:00:1781580045.889711   15124 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 0s 400ms/step - accuracy: 0.9080 - loss: 0.2774
+Epoch 2: val_accuracy improved from 0.90637 to 0.91833, saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+
+Epoch 2: finished saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 672s 490ms/step - accuracy: 0.9149 - loss: 0.2626 - val_accuracy: 0.9183 - val_loss: 0.2565 - learning_rate: 0.0010
+Epoch 3/15
+I0000 00:00:1781580711.370785   21740 shuffle_dataset_op.cc:453] ShuffleDatasetV3:3: Filling up shuffle buffer (this may take a while): 6433 of 10000
+I0000 00:00:1781580716.968796   21740 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 0s 387ms/step - accuracy: 0.9188 - loss: 0.2472
+Epoch 3: val_accuracy improved from 0.91833 to 0.92011, saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+
+Epoch 3: finished saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 651s 475ms/step - accuracy: 0.9223 - loss: 0.2357 - val_accuracy: 0.9201 - val_loss: 0.2437 - learning_rate: 0.0010
+Epoch 4/15
+I0000 00:00:1781581362.002870   20732 shuffle_dataset_op.cc:453] ShuffleDatasetV3:3: Filling up shuffle buffer (this may take a while): 6514 of 10000
+I0000 00:00:1781581367.456629   20732 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 0s 393ms/step - accuracy: 0.9203 - loss: 0.2358
+Epoch 4: val_accuracy improved from 0.92011 to 0.92777, saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+
+Epoch 4: finished saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 664s 485ms/step - accuracy: 0.9259 - loss: 0.2246 - val_accuracy: 0.9278 - val_loss: 0.2240 - learning_rate: 0.0010
+Epoch 5/15
+I0000 00:00:1781582026.391727    2520 shuffle_dataset_op.cc:453] ShuffleDatasetV3:3: Filling up shuffle buffer (this may take a while): 6527 of 10000
+I0000 00:00:1781582031.857525    2520 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 0s 398ms/step - accuracy: 0.9194 - loss: 0.2309
+Epoch 5: val_accuracy improved from 0.92777 to 0.92955, saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+
+Epoch 5: finished saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 670s 489ms/step - accuracy: 0.9254 - loss: 0.2200 - val_accuracy: 0.9295 - val_loss: 0.2102 - learning_rate: 0.0010
+Epoch 6/15
+I0000 00:00:1781582696.318461   25356 shuffle_dataset_op.cc:453] ShuffleDatasetV3:3: Filling up shuffle buffer (this may take a while): 6498 of 10000
+I0000 00:00:1781582701.812970   25356 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 0s 394ms/step - accuracy: 0.9244 - loss: 0.2306
+Epoch 6: val_accuracy improved from 0.92955 to 0.93057, saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+
+Epoch 6: finished saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 666s 486ms/step - accuracy: 0.9286 - loss: 0.2177 - val_accuracy: 0.9306 - val_loss: 0.2161 - learning_rate: 0.0010
+Epoch 7/15
+I0000 00:00:1781583361.950804    5708 shuffle_dataset_op.cc:453] ShuffleDatasetV3:3: Filling up shuffle buffer (this may take a while): 6470 of 10000
+I0000 00:00:1781583367.524258    5708 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 0s 398ms/step - accuracy: 0.9258 - loss: 0.2234
+Epoch 7: ReduceLROnPlateau reducing learning rate to 0.0005000000237487257.
+
+Epoch 7: val_accuracy did not improve from 0.93057
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 671s 490ms/step - accuracy: 0.9281 - loss: 0.2150 - val_accuracy: 0.9240 - val_loss: 0.2364 - learning_rate: 0.0010
+Epoch 8/15
+I0000 00:00:1781584032.508929   14872 shuffle_dataset_op.cc:453] ShuffleDatasetV3:3: Filling up shuffle buffer (this may take a while): 6289 of 10000
+I0000 00:00:1781584038.326858   14872 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 0s 389ms/step - accuracy: 0.9228 - loss: 0.2239
+Epoch 8: val_accuracy improved from 0.93057 to 0.93328, saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+
+Epoch 8: finished saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 655s 478ms/step - accuracy: 0.9291 - loss: 0.2081 - val_accuracy: 0.9333 - val_loss: 0.2014 - learning_rate: 5.0000e-04
+Epoch 9/15
+I0000 00:00:1781584687.299526   15136 shuffle_dataset_op.cc:453] ShuffleDatasetV3:3: Filling up shuffle buffer (this may take a while): 6536 of 10000
+I0000 00:00:1781584692.662660   15136 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 0s 393ms/step - accuracy: 0.9246 - loss: 0.2182
+Epoch 9: val_accuracy did not improve from 0.93328
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 658s 481ms/step - accuracy: 0.9304 - loss: 0.2076 - val_accuracy: 0.9327 - val_loss: 0.2125 - learning_rate: 5.0000e-04
+Epoch 10/15
+I0000 00:00:1781585345.792917   35808 shuffle_dataset_op.cc:453] ShuffleDatasetV3:3: Filling up shuffle buffer (this may take a while): 6421 of 10000
+I0000 00:00:1781585351.323827   35808 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 0s 389ms/step - accuracy: 0.9281 - loss: 0.2122
+Epoch 10: ReduceLROnPlateau reducing learning rate to 0.0002500000118743628.
+
+Epoch 10: val_accuracy did not improve from 0.93328
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 654s 477ms/step - accuracy: 0.9324 - loss: 0.2029 - val_accuracy: 0.9289 - val_loss: 0.2235 - learning_rate: 5.0000e-04
+Epoch 11/15
+I0000 00:00:1781585999.395013   26648 shuffle_dataset_op.cc:453] ShuffleDatasetV3:3: Filling up shuffle buffer (this may take a while): 6455 of 10000
+I0000 00:00:1781586004.890775   26648 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 0s 379ms/step - accuracy: 0.9228 - loss: 0.2168
+Epoch 11: val_accuracy did not improve from 0.93328
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 651s 475ms/step - accuracy: 0.9303 - loss: 0.2032 - val_accuracy: 0.9318 - val_loss: 0.2135 - learning_rate: 2.5000e-04
+Epoch 12/15
+I0000 00:00:1781586650.661650   23612 shuffle_dataset_op.cc:453] ShuffleDatasetV3:3: Filling up shuffle buffer (this may take a while): 6419 of 10000
+I0000 00:00:1781586656.311952   23612 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 0s 399ms/step - accuracy: 0.9287 - loss: 0.2101
+Epoch 12: ReduceLROnPlateau reducing learning rate to 0.0001250000059371814.
+
+Epoch 12: val_accuracy did not improve from 0.93328
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 671s 490ms/step - accuracy: 0.9319 - loss: 0.2011 - val_accuracy: 0.9323 - val_loss: 0.2104 - learning_rate: 2.5000e-04
+Epoch 13/15
+I0000 00:00:1781587321.387739   20928 shuffle_dataset_op.cc:453] ShuffleDatasetV3:3: Filling up shuffle buffer (this may take a while): 6303 of 10000
+I0000 00:00:1781587327.195738   20928 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 0s 387ms/step - accuracy: 0.9247 - loss: 0.2143
+Epoch 13: val_accuracy did not improve from 0.93328
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 652s 475ms/step - accuracy: 0.9324 - loss: 0.1990 - val_accuracy: 0.9325 - val_loss: 0.2075 - learning_rate: 1.2500e-04
+
+Stage 2 Fine Tuning
+Epoch 1/10
+I0000 00:00:1781587982.054619   33552 shuffle_dataset_op.cc:453] ShuffleDatasetV3:3: Filling up shuffle buffer (this may take a while): 7290 of 10000
+I0000 00:00:1781587986.264498   33552 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 0s 490ms/step - accuracy: 0.7443 - loss: 0.8478
+Epoch 1: val_accuracy did not improve from 0.93328
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 795s 577ms/step - accuracy: 0.8392 - loss: 0.5118 - val_accuracy: 0.9271 - val_loss: 0.2494 - learning_rate: 1.0000e-05
+Epoch 2/10
+I0000 00:00:1781588768.195861   13128 shuffle_dataset_op.cc:453] ShuffleDatasetV3:3: Filling up shuffle buffer (this may take a while): 6248 of 10000
+I0000 00:00:1781588774.113214   13128 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 0s 488ms/step - accuracy: 0.8925 - loss: 0.3250
+Epoch 2: ReduceLROnPlateau reducing learning rate to 4.999999873689376e-06.
+
+Epoch 2: val_accuracy improved from 0.93328 to 0.93898, saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+
+Epoch 2: finished saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 789s 578ms/step - accuracy: 0.9097 - loss: 0.2793 - val_accuracy: 0.9390 - val_loss: 0.2109 - learning_rate: 1.0000e-05
+Epoch 3/10
+I0000 00:00:1781589557.161274   10228 shuffle_dataset_op.cc:453] ShuffleDatasetV3:3: Filling up shuffle buffer (this may take a while): 6457 of 10000
+I0000 00:00:1781589562.883107   10228 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 0s 538ms/step - accuracy: 0.9103 - loss: 0.2737
+Epoch 3: val_accuracy improved from 0.93898 to 0.94431, saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+
+Epoch 3: finished saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 860s 631ms/step - accuracy: 0.9220 - loss: 0.2383 - val_accuracy: 0.9443 - val_loss: 0.1970 - learning_rate: 5.0000e-06
+Epoch 4/10
+I0000 00:00:1781590416.832263   23300 shuffle_dataset_op.cc:453] ShuffleDatasetV3:3: Filling up shuffle buffer (this may take a while): 6673 of 10000
+I0000 00:00:1781590421.934624   23300 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 0s 528ms/step - accuracy: 0.9190 - loss: 0.2450
+Epoch 4: val_accuracy improved from 0.94431 to 0.94711, saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+
+Epoch 4: finished saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 887s 652ms/step - accuracy: 0.9286 - loss: 0.2186 - val_accuracy: 0.9471 - val_loss: 0.1848 - learning_rate: 5.0000e-06
+Epoch 5/10
+I0000 00:00:1781591304.140749   10304 shuffle_dataset_op.cc:453] ShuffleDatasetV3:3: Filling up shuffle buffer (this may take a while): 4912 of 10000
+I0000 00:00:1781591313.038602   10304 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 0s 565ms/step - accuracy: 0.9238 - loss: 0.2337
+Epoch 5: val_accuracy improved from 0.94711 to 0.94964, saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+
+Epoch 5: finished saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 907s 664ms/step - accuracy: 0.9323 - loss: 0.2099 - val_accuracy: 0.9496 - val_loss: 0.1746 - learning_rate: 5.0000e-06
+Epoch 6/10
+I0000 00:00:1781592210.976422   36364 shuffle_dataset_op.cc:453] ShuffleDatasetV3:3: Filling up shuffle buffer (this may take a while): 6375 of 10000
+I0000 00:00:1781592216.905074   36364 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 0s 674ms/step - accuracy: 0.9297 - loss: 0.2165
+Epoch 6: val_accuracy improved from 0.94964 to 0.95066, saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+
+Epoch 6: finished saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 1065s 784ms/step - accuracy: 0.9373 - loss: 0.1955 - val_accuracy: 0.9507 - val_loss: 0.1718 - learning_rate: 5.0000e-06
+Epoch 7/10
+I0000 00:00:1781593275.696212   17808 shuffle_dataset_op.cc:453] ShuffleDatasetV3:3: Filling up shuffle buffer (this may take a while): 5927 of 10000
+I0000 00:00:1781593283.065289   17808 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 0s 575ms/step - accuracy: 0.9321 - loss: 0.2074
+Epoch 7: val_accuracy improved from 0.95066 to 0.95291, saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+
+Epoch 7: finished saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 922s 676ms/step - accuracy: 0.9405 - loss: 0.1848 - val_accuracy: 0.9529 - val_loss: 0.1650 - learning_rate: 5.0000e-06
+Epoch 8/10
+I0000 00:00:1781594198.153830   27332 shuffle_dataset_op.cc:453] ShuffleDatasetV3:3: Filling up shuffle buffer (this may take a while): 6328 of 10000
+I0000 00:00:1781594204.056322   27332 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 0s 558ms/step - accuracy: 0.9341 - loss: 0.1987
+Epoch 8: val_accuracy improved from 0.95291 to 0.95393, saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+
+Epoch 8: finished saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 896s 658ms/step - accuracy: 0.9419 - loss: 0.1790 - val_accuracy: 0.9539 - val_loss: 0.1599 - learning_rate: 5.0000e-06
+Epoch 9/10
+I0000 00:00:1781595093.891664   12624 shuffle_dataset_op.cc:453] ShuffleDatasetV3:3: Filling up shuffle buffer (this may take a while): 6606 of 10000
+I0000 00:00:1781595099.078195   12624 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 0s 548ms/step - accuracy: 0.9398 - loss: 0.1887
+Epoch 9: val_accuracy improved from 0.95393 to 0.95477, saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+
+Epoch 9: finished saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 882s 648ms/step - accuracy: 0.9458 - loss: 0.1701 - val_accuracy: 0.9548 - val_loss: 0.1567 - learning_rate: 5.0000e-06
+Epoch 10/10
+I0000 00:00:1781595976.376197   36148 shuffle_dataset_op.cc:453] ShuffleDatasetV3:3: Filling up shuffle buffer (this may take a while): 6606 of 10000
+I0000 00:00:1781595981.539155   36148 shuffle_dataset_op.cc:483] Shuffle buffer filled.
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 0s 537ms/step - accuracy: 0.9419 - loss: 0.1777
+Epoch 10: val_accuracy improved from 0.95477 to 0.95636, saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+
+Epoch 10: finished saving model to C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+1338/1338 ━━━━━━━━━━━━━━━━━━━━ 859s 631ms/step - accuracy: 0.9475 - loss: 0.1618 - val_accuracy: 0.9564 - val_loss: 0.1525 - learning_rate: 5.0000e-06
+
+Final Evaluation
+335/335 ━━━━━━━━━━━━━━━━━━━━ 128s 382ms/step - accuracy: 0.9564 - loss: 0.1525
+
+Validation Loss     : 0.1525
+Validation Accuracy : 0.9564
+
+Saved Model : C:\Workspace\deeplearning\pill_shape_efficientnetb0.keras
+Saved Encoder : C:\Workspace\deeplearning\shape_encoder.pkl
